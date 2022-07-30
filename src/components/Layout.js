@@ -8,11 +8,18 @@ const Styleddiv = createGlobalStyle`
 body,html{
   fontFamily: 'Open Sans', sans-serif ;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 !important;  
+  background-image: linear-gradient(
+    0.25turn,
+    #808080 ,
+    #F8F8FF ,
+    #DCDCDC ,
+    #808080 
+  );
 }
 `
 const LayoutWrapper = styled.div `
-max-width: 960px ;
+max-width: 1100px ;
 margin: 0 auto ;
 `
 const Layout = ({ children }) => {

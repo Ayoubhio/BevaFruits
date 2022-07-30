@@ -28,11 +28,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    
     {
       resolve: "gatsby-source-wordpress",
       options: {
         minimizeDeprecationNotice: true,
-        baseUrl: "first-gatsby-js-wp.local",
+        baseUrl: "beva-fruits.local",
         protocol: "http",
         hostingWPCOM: false,  
         useACF: false,
@@ -48,7 +49,7 @@ module.exports = {
           "**/taxonomies",
           "**/users",
           "**/menus",
-          "**/portfolio"
+          "**/beva"
         ],
       },
     },

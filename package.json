@@ -16,11 +16,16 @@
     "gatsby-source-filesystem": "^2.3.25",
     "gatsby-source-wordpress": "^3.3.30",
     "gatsby-transformer-sharp": "^2.5.13",
+    "jquery": "^3.6.0",
+    "mdb-react-ui-kit": "^4.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.5"
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5",
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
     "prettier": "2.1.0"
@@ -30,7 +35,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby lbuild",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",

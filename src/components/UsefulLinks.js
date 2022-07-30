@@ -1,35 +1,29 @@
 import React from "react"
 import { graphql,StaticQuery,Link } from "gatsby"
 import styled  from "styled-components";
-import SiteInfo from "./SiteInfo"
+import '../styles/menu.css'
+
+
 
 const MainMenuWrapper = styled.div`
   display: flex;
-  background-image: linear-gradient(
-    -225deg,
-    #AFEEEE 0%,
-    #87CEEB 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
   `
 const MainMenuinner = styled.div`
-  margin : 0 auto ;
-  max-width : 1160px ;
-  width : 1160px ;
-  height :100%;
   display: flex;
+  flex-direction: column;
   `
-const MenuItem = styled(Link)` //wrapp a third-party library component
-  color:bisque ;
+  const MenuItem = styled(Link)` //wrapp a third-party library component
+  color:black ;
   display: block ;
-  padding : 8px 16px ;
+  padding : 4px 8px ;
+  text-decoration: none;
+
 `
 
 export default () => (
         <StaticQuery query={graphql `
         {
-          allWordpressWpApiMenusMenusItems(filter:{name: {eq: "Main Menu"}}) {
+          allWordpressWpApiMenusMenusItems(filter:{name: {eq: "Choix"}}) {
             edges {
               node {
                 name
@@ -44,7 +38,6 @@ export default () => (
         `} render={props =>(
             <MainMenuWrapper>
               <MainMenuinner>
-                <SiteInfo/>
                 {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map (item =>(
                   <MenuItem to={`/${item.object_slug}`} key={item.title}>
                       {item.title}               
@@ -54,4 +47,4 @@ export default () => (
             </MainMenuWrapper>
         )}/>
     
-)
+);

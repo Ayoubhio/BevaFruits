@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const SiteInfoWrapper = styled.div`
     flex-grow : 1;
-    color: bisque ;
+    color: black ;
     margin : auto 0 
 `
 const Sitetitle = styled.div`

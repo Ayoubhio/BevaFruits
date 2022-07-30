@@ -1,0 +1,107 @@
+
+/************ Choix page and choix menu ******* */
+.lineUp {
+  /* animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s; */
+  animation: 4s anim-titre ease-out;
+  padding : 8px 16px ;
+  font-size : 4vh ;
+  color: black
+}
+.titre
+{
+    animation: 4s anim-titre ease-out ;
+    position : absolute;
+    top:25% ;
+    left : 10% ;
+    width:100%;
+    color: black;
+    font-size : 7vh ;
+}
+.parag
+{
+  animation: 4s anim-titre ease-out infinite;
+  position : absolute;
+  bottom:5% ;
+  text-align: center;
+  width:100%;
+  color: #E9967A ;
+}
+
+@keyframes anim-titre {
+  0% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  20% {
+    opacity: 0;
+
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+
+  }
+}
+
+/************** HEADER ***************/
+.parag_header
+{
+  animation: 4s anim-titre ease-out;
+  position : absolute;
+  bottom:5% ;
+  text-align: center;
+  width:100%;
+  color: black;
+}
+.titre_main{
+  bottom:5% ;
+  text-align: center;
+  width:100%;
+  color: black;
+  font-size: 2.5vh;
+  font-weight: 1000;
+}
+
+/************** CARD BLOG ***************/
+
+.card{
+  border : 1px solid #9999994c ;
+  border-radius : 4vh ;
+  margin : 3vh 3vh ;
+  background-color: #FFB6C1;
+}
+.card:hover {
+  transform:scale(1.05);
+  border: 1px solid;
+  box-shadow: 2px 2px #99999974;
+  transition-duration:1s;
+  cursor: pointer;
+}
+.lien{
+  text-decoration: none;
+}
+.lien:visited {
+  color: black;
+}
+.lien:active {
+  color: black;
+}
+
+/************** BevaTemplate Link ***************/
+.pageNumber{
+    opacity: 0;
+    transition-duration: 3s ease-in-out;
+}
+.pageNumber.active{
+  opacity: 1;
+  transition-duration: 1s ;
+  transform: scale(1.08);
+}
