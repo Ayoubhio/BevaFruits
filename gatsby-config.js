@@ -36,8 +36,8 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         minimizeDeprecationNotice: true,
-        baseUrl: "beva-fruits.local",
-        protocol: "http",
+        baseUrl: process.env.API_URL,
+        protocol: process.env.API_PROTOCOL,
         hostingWPCOM: false,  
         useACF: false,
         verboseOutput: false,
